@@ -11,6 +11,9 @@ One-line per phone number formatted as [+][country code] ([AreaCode]) [local pho
 ## KNOWN ISSUES
 It seems like there isn't too many issues. The only problem is that you don't upload the file, mytextfile.txt. So, I creat another file, example1.txt, and test my program on it. It works well.
 
+```
+curl ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz -o file.txt
+```
 # ensg2hugo.py
 
 ## USAGE
