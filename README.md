@@ -11,9 +11,7 @@ One-line per phone number formatted as [+][country code] ([AreaCode]) [local pho
 ## KNOWN ISSUES
 It seems like there isn't too many issues. The only problem is that you don't upload the file, mytextfile.txt. So, I creat another file, example1.txt, and test my program on it. It works well.
 
-```
-curl ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz -o file.txt
-```
+
 # ensg2hugo.py
 
 ## USAGE
@@ -21,6 +19,9 @@ python3 ensg2hugo.py [-f][0-9] [file]
 
 ## DESCRIPTION
 Key hints. You need to read the Homo_sapiens.GRCh37.75.gtf to create a dictionary, whereby you lookup the Ensembl name and replace it with the HUGO name.
+```
+curl ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz -o file.txt
+```
 
 ## KNOWN ISSUES
 You didn't upload the file, Homo_sapiens.GRCh37.75.gtf, either. So, I found a .gtf file, named Homo_sapiens.GRCh37.75.formatted.gtf, and downloaded it. I tried to extract four columns from this file, and altered the first column from gene_id to gene_name. But I could only extract columns from this file. So, I still need to figure out how to build the dictionary and to replace columns. Though my program is totally wrong, I still pushed my work to Github to prove my efforts. 
