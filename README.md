@@ -24,7 +24,7 @@ curl ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.7
 ```
 
 ## KNOWN ISSUES
-I tried to extract two columns, gene_id and gene_name from this file, and altered the first column from gene_id to gene_name. But I could only extract columns from this file. So, I still need to figure out how to build the dictionary and to replace columns. 
+Though ensg2hugo.py can successfully lookup the Ensembl name and replace it with the HUGO name, when I redirect the result into expression_analysis.hugo.tsv, the first line disappear.
 
 # histogram.py
 
