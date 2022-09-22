@@ -2,7 +2,7 @@ import sys,re
 if __name__ == '__main__':
 	content=""
 	argv_len=len(sys.argv)
-	if argv_len==2:
+	if argv_len != 1:
 		for line in open(sys.argv[1],"r"):
 			content=content+line
 

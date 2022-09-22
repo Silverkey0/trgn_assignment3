@@ -66,7 +66,10 @@ def main(argv):
 					dicts[gene_id]['exon_id']=exon_id;
 
 		if os.path.exists(sys.argv[2]):
-			# print('"","gene_id","gene_type","logFC","AveExpr"')
+			if int(number)==2:
+				print('"","gene_name","gene_type","logFC","AveExpr"')
+			else:
+				print('"","gene_id","gene_type","logFC","AveExpr"')			
 			for csv in open(sys.argv[2],"r"):
 				p=csv.split(",")
 				n2=p[1]

@@ -24,7 +24,7 @@ curl ftp://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.7
 ```
 
 ## KNOWN ISSUES
-Though ensg2hugo.py can successfully lookup the Ensembl name and replace it with the HUGO name, when I redirect the result into expression_analysis.hugo.tsv, the first line disappear.
+Though ensg2hugo.py can successfully lookup the Ensembl name and replace it with the HUGO name, when I redirect the result into expression_analysis.hugo.tsv, the first line disappear. I'm figuring it out.
 
 # histogram.py
 
