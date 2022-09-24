@@ -34,7 +34,6 @@ def main(argv):
         plt.title('Histogram')
         plt.legend()
         plt.show()
-        plt.saveas(gcf,'histogram.png')
     else:
         print(sys.argv[2]+" not exist")
 
