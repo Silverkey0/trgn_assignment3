@@ -14,3 +14,10 @@ if __name__ == '__main__':
 				else:
 					result="("+v[2]+")"+v[3]+v[4]
 					print(result)
+
+
+
+			
+
+			
+
