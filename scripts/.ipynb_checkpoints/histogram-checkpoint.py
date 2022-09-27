@@ -26,7 +26,8 @@ def main(argv):
         Titanic = pd.read_csv(sys.argv[2])
 
         if int(number)==4:
-            Titanic.AveExpr.plot(kind = 'hist', bins = 20, color = 'steelblue', edgecolor = 'black', label ='AveExpr')
+            Titanic.AveExpr.plot(kind = 'hist', bins = 20, color = 'steelblue', edgecolor = 'black', label ='AveExpr') #plot() will draw points (markers) in a diagram.
+            #Titanic is read_csv of pandas, which is used to read csv files and output as dataframe
         else:
 
             Titanic.logFC.plot(kind = 'hist', bins = 20, color = 'steelblue', edgecolor = 'black', label = 'logFC')
